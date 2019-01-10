@@ -9,59 +9,73 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Impact View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GlobalImpactApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ImpactViewController" customModule="GlobalImpactApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Qlj-rn-oyK">
-                                <rect key="frame" x="0.0" y="20" width="375" height="175"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="175" id="fgw-N0-Vkm"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="20" width="375" height="297"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvc-XA-0Wx">
-                                <rect key="frame" x="21" y="218" width="338" height="39"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MegImage" translatesAutoresizingMaskIntoConstraints="NO" id="ybd-U7-EzD">
+                                <rect key="frame" x="0.0" y="386" width="375" height="203"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="6HE-vP-Xhc"/>
+                                    <constraint firstAttribute="height" constant="203" id="DiL-pJ-GCt"/>
                                 </constraints>
-                                <state key="normal" title="Animate to impact area"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ybd-U7-EzD">
-                                <rect key="frame" x="0.0" y="269" width="375" height="259.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Global Impacts App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JA-Al-2XN">
-                                <rect key="frame" x="43" y="572" width="295" height="21"/>
+                                <rect key="frame" x="43" y="611" width="295" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KLp-m5-GeN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvc-XA-0Wx">
+                                <rect key="frame" x="21" y="325" width="338" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="qbX-ol-XCb"/>
+                                </constraints>
+                                <state key="normal" title="Animate to impact area"/>
+                                <connections>
+                                    <action selector="animateClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRV-GY-bA3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Qlj-rn-oyK" firstAttribute="trailing" secondItem="ybd-U7-EzD" secondAttribute="trailing" id="4re-go-GEz"/>
-                            <constraint firstItem="Qlj-rn-oyK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="64G-fz-ElJ"/>
-                            <constraint firstItem="Nvc-XA-0Wx" firstAttribute="centerX" secondItem="9JA-Al-2XN" secondAttribute="centerX" id="CyJ-k9-4n7"/>
-                            <constraint firstAttribute="trailing" secondItem="Qlj-rn-oyK" secondAttribute="trailing" id="HU4-QU-TWI"/>
-                            <constraint firstItem="Nvc-XA-0Wx" firstAttribute="top" secondItem="Qlj-rn-oyK" secondAttribute="bottom" constant="23" id="OzM-YL-QlW"/>
-                            <constraint firstItem="9JA-Al-2XN" firstAttribute="top" secondItem="ybd-U7-EzD" secondAttribute="bottom" constant="44" id="U4t-fd-Ech"/>
-                            <constraint firstItem="Qlj-rn-oyK" firstAttribute="leading" secondItem="ybd-U7-EzD" secondAttribute="leading" id="UBa-I8-8kZ"/>
-                            <constraint firstItem="9JA-Al-2XN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="chS-Ai-D1F"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9JA-Al-2XN" secondAttribute="bottom" constant="74" id="cmI-m9-Y2L"/>
-                            <constraint firstItem="Nvc-XA-0Wx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dOb-Ru-8IP"/>
-                            <constraint firstItem="Nvc-XA-0Wx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="hgp-Cd-Mt0"/>
-                            <constraint firstItem="Qlj-rn-oyK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mIb-CI-fnQ"/>
-                            <constraint firstItem="ybd-U7-EzD" firstAttribute="top" secondItem="Nvc-XA-0Wx" secondAttribute="bottom" constant="12" id="yXs-af-qcq"/>
+                            <constraint firstAttribute="trailing" secondItem="Qlj-rn-oyK" secondAttribute="trailing" id="0kq-b6-dhD"/>
+                            <constraint firstItem="ybd-U7-EzD" firstAttribute="top" secondItem="Nvc-XA-0Wx" secondAttribute="bottom" constant="22" id="1Ng-SU-hnd"/>
+                            <constraint firstItem="9JA-Al-2XN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="FfQ-g4-pr4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9JA-Al-2XN" secondAttribute="bottom" constant="35" id="Icu-Fb-O7z"/>
+                            <constraint firstItem="Nvc-XA-0Wx" firstAttribute="centerX" secondItem="9JA-Al-2XN" secondAttribute="centerX" id="Lea-7Z-Dbh"/>
+                            <constraint firstItem="Qlj-rn-oyK" firstAttribute="leading" secondItem="ybd-U7-EzD" secondAttribute="leading" id="P9N-Fs-eO1"/>
+                            <constraint firstItem="Qlj-rn-oyK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qu9-8W-PaA"/>
+                            <constraint firstItem="9JA-Al-2XN" firstAttribute="top" secondItem="ybd-U7-EzD" secondAttribute="bottom" constant="22" id="Ue5-h0-AbP"/>
+                            <constraint firstItem="Nvc-XA-0Wx" firstAttribute="top" secondItem="Qlj-rn-oyK" secondAttribute="bottom" constant="8" symbolic="YES" id="aqd-NN-qYe"/>
+                            <constraint firstItem="Nvc-XA-0Wx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="drR-fN-nes"/>
+                            <constraint firstItem="Nvc-XA-0Wx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="oAk-5j-4Bm"/>
+                            <constraint firstItem="Qlj-rn-oyK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sfW-nZ-5Mf"/>
+                            <constraint firstItem="Qlj-rn-oyK" firstAttribute="trailing" secondItem="ybd-U7-EzD" secondAttribute="trailing" id="zmi-F8-mLO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="animationButton" destination="Nvc-XA-0Wx" id="DKh-Bf-7bd"/>
+                        <outlet property="impactImage" destination="ybd-U7-EzD" id="pHX-J4-TPM"/>
+                        <outlet property="mapView" destination="Qlj-rn-oyK" id="T9Z-cb-bEz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MegImage" width="600" height="325"/>
+    </resources>
 </document>

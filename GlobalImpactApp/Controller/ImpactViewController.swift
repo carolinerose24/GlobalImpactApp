@@ -12,10 +12,10 @@ import MapKit
 class ImpactViewController: UIViewController
 {
 
-    @IBOutlet weak var mapView: MKMapView!
+ 
     @IBOutlet weak var animationButton: UIButton!
+    @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var impactImage: UIImageView!
-    
     
     
     override func viewDidLoad()
@@ -25,6 +25,7 @@ class ImpactViewController: UIViewController
         // Do any additional setup after loading the view.
     }
     
+
     @IBAction func animateClick(_ sender: UIButton)
     {
         let impactLocation = CLLocationCoordinate2D(latitude: -28.6657, longitude: 30.5296)
