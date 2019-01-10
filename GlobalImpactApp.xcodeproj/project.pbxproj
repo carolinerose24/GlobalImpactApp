@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		ABE45F6521E79A8E00F4DC27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE45F6421E79A8E00F4DC27 /* AppDelegate.swift */; };
-		ABE45F6721E79A8E00F4DC27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE45F6621E79A8E00F4DC27 /* ViewController.swift */; };
 		ABE45F6A21E79A8E00F4DC27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE45F6821E79A8E00F4DC27 /* Main.storyboard */; };
 		ABE45F6C21E79A9200F4DC27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE45F6B21E79A9200F4DC27 /* Assets.xcassets */; };
 		ABE45F6F21E79A9200F4DC27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE45F6D21E79A9200F4DC27 /* LaunchScreen.storyboard */; };
+		ABE45F7A21E79D0100F4DC27 /* ImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE45F7921E79D0100F4DC27 /* ImpactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ABE45F6121E79A8E00F4DC27 /* GlobalImpactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalImpactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE45F6421E79A8E00F4DC27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABE45F6621E79A8E00F4DC27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABE45F6921E79A8E00F4DC27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABE45F6B21E79A9200F4DC27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE45F6E21E79A9200F4DC27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABE45F7021E79A9200F4DC27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABE45F7921E79D0100F4DC27 /* ImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,38 @@
 		ABE45F6321E79A8E00F4DC27 /* GlobalImpactApp */ = {
 			isa = PBXGroup;
 			children = (
-				ABE45F6421E79A8E00F4DC27 /* AppDelegate.swift */,
-				ABE45F6621E79A8E00F4DC27 /* ViewController.swift */,
-				ABE45F6821E79A8E00F4DC27 /* Main.storyboard */,
-				ABE45F6B21E79A9200F4DC27 /* Assets.xcassets */,
-				ABE45F6D21E79A9200F4DC27 /* LaunchScreen.storyboard */,
-				ABE45F7021E79A9200F4DC27 /* Info.plist */,
+				ABE45F7621E79ADB00F4DC27 /* Resources */,
+				ABE45F7721E79AE700F4DC27 /* Controller */,
+				ABE45F7821E79B0A00F4DC27 /* View */,
 			);
 			path = GlobalImpactApp;
+			sourceTree = "<group>";
+		};
+		ABE45F7621E79ADB00F4DC27 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABE45F6421E79A8E00F4DC27 /* AppDelegate.swift */,
+				ABE45F6B21E79A9200F4DC27 /* Assets.xcassets */,
+				ABE45F7021E79A9200F4DC27 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ABE45F7721E79AE700F4DC27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ABE45F7921E79D0100F4DC27 /* ImpactViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ABE45F7821E79B0A00F4DC27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ABE45F6821E79A8E00F4DC27 /* Main.storyboard */,
+				ABE45F6D21E79A9200F4DC27 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABE45F6721E79A8E00F4DC27 /* ViewController.swift in Sources */,
+				ABE45F7A21E79D0100F4DC27 /* ImpactViewController.swift in Sources */,
 				ABE45F6521E79A8E00F4DC27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
