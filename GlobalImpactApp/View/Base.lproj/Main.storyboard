@@ -28,7 +28,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="6HE-vP-Xhc"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Animate to impact area"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ybd-U7-EzD">
                                 <rect key="frame" x="0.0" y="269" width="375" height="259.5"/>

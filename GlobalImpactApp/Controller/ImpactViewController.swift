@@ -28,7 +28,8 @@ class ImpactViewController: UIViewController
     @IBAction func animateClick(_ sender: UIButton)
     {
         let impactLocation = CLLocationCoordinate2D(latitude: -28.6657, longitude: 30.5296)
-        let mapSpan = MKCoordinateSpan(latitudeDelta: 10.05, longitudeDelta: 10.05)
+        let mapSpan = MKCoordinateSpan(latitudeDelta: 10.05, longitudeDelta: 10.05)//this is how zoomed in you are
+                                                                            //the smaller the number, the more zoomed in you are
         let impactRegion = MKCoordinateRegion(center: impactLocation, span: mapSpan)
         mapView.animatedZoom(zoomRegion: impactRegion, duration: 2.5)
     }
